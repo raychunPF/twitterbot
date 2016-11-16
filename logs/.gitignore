@@ -1,0 +1,3 @@
+# this gitignore is used to add an empty directory to git
+*
+!.gitignore

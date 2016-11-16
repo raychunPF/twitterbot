@@ -1,0 +1,25 @@
+{
+    "env": {
+        "node": true,
+        "mocha": true,
+        "browser": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "indent": ["error", 2],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "space-before-blocks": "error",
+        "keyword-spacing": ["error", { "before": true }],
+        "space-infix-ops": "error",
+        "padded-blocks": ["error", "never"],
+        "space-in-parens": ["error", "never"],
+        "space-before-function-paren": ["error", {
+            "anonymous": "always",
+            "named": "never"
+        }]
+    },
+    "globals": {
+    }
+}
