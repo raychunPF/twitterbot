@@ -18,7 +18,7 @@ var baseRequest = request.defaults({
 
 exports.getUser = function () {
   var qs = {
-    screen_name: 'PFRay9'
+    screen_name: 'nytimes'
   };
 
   baseRequest({uri:'/users/lookup.json', qs: qs}, function (e, r, b) {
