@@ -16,7 +16,7 @@ var express = require('express');
 var app = express();
 
 // set the view engine to ejs
-app.set('view engine', 'ejs');
+app.set('view engine', 'pug');
 app.set('views', './views');
 
 app.get('/', function (req, res) {
@@ -24,12 +24,16 @@ app.get('/', function (req, res) {
     follow: ['138526255','21447363','813286','16303106','1367531','807095']
   };
 
-  var stream = T.stream('statuses/filter', listOfUsers);
-
-  stream.on('tweet', function (tweet) {
-    console.log(tweet);
-  });
+  // var stream = T.stream('statuses/filter', listOfUsers);
+  //
+  // stream.on('tweet', function (tweet) {
+  //   console.log(tweet);
+  // });
   res.render('index', { title: 'Tweets!' });
+});
+
+app.get('/user', function (req, res) {
+  res.render('user', { title: 'This is a user\'s page' });
 });
 
 app.listen(3000, function () {

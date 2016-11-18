@@ -1,8 +1,10 @@
+// Rules for eslint
 {
     "env": {
         "node": true,
         "mocha": true,
-        "browser": true
+        "browser": true,
+        "es6": true
     },
     "extends": "eslint:recommended",
     "rules": {
